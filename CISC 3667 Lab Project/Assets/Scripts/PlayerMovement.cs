@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -52,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
             dashingSFX.Play();
             StartCoroutine(Dash());
         }
-        if (Keyboard.current.leftAltKey.wasPressedThisFrame || Keyboard.current.jKey.wasPressedThisFrame)
+        if (Input.GetKeyDown(KeyCode.LeftAlt) || Input.GetKeyDown(KeyCode.J))
         {
             FirePin();
         }
