@@ -9,12 +9,14 @@ public class PinProjectile : MonoBehaviour
     private Rigidbody2D rb;
     PlayerMovement pm;
     SpriteRenderer sr;
+    private ScoreKeeper sk;
 
     void Start()
     {
         pm = GameObject.Find("Player").GetComponent<PlayerMovement>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        sk = GameObject.FindObjectOfType<ScoreKeeper>();
         if (pm.isFacingRight)
         {
             rb.velocity = new Vector2(speed, 0);
@@ -33,6 +35,7 @@ public class PinProjectile : MonoBehaviour
             Debug.Log("Balloon hit!");
             BalloonPopSFX.Play();
             Destroy(collision.gameObject);
+            sk.IncrementScore();
             StartCoroutine(DestroyAfterDelay(1f));
         }
         if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Balloon"))

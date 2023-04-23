@@ -15,8 +15,11 @@ public class BalloonMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(0, speed);
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        speed = -speed;
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            speed = -speed;
+        }
     }
 }
