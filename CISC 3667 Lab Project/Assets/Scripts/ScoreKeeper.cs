@@ -7,6 +7,7 @@ public class ScoreKeeper : MonoBehaviour
 {
     public Text scoreText;
     private int score;
+    private int totalBalloonPopped;
 
     private void Start()
     {
@@ -17,6 +18,11 @@ public class ScoreKeeper : MonoBehaviour
     public void AddScore(int points)
     {
         score += points;
+        totalBalloonPopped++;
         scoreText.text = "Score: " + score.ToString();
+    }
+    public int TotalBalloonPopped()
+    {
+        return totalBalloonPopped;
     }
 }

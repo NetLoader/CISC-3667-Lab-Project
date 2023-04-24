@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    private GameObject[] balloons;
+    [SerializeField] private int scoreThreshold;
+    private ScoreKeeper sk;
+    private int score;
 
+    private void Start()
+    {
+        sk = FindObjectOfType<ScoreKeeper>();
+    }
     private void Update()
     {
-        balloons = GameObject.FindGameObjectsWithTag("Balloon");
-        if (balloons.Length == 0)
+        score = sk.TotalBalloonPopped();
+        if (score >= scoreThreshold )
         {
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(nextSceneIndex);

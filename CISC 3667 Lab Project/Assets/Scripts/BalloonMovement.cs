@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BalloonMovement : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class BalloonMovement : MonoBehaviour
         if (currentSize >= maxSize)
         {
             Destroy(gameObject);
+            RestartLevel();
         }
         BalloonGrowth();
         rb.velocity = new Vector2(0, speed);
@@ -36,5 +38,10 @@ public class BalloonMovement : MonoBehaviour
         currentSize += growthRate * Time.deltaTime;
         currentSize = Mathf.Clamp(currentSize, 0, maxSize);
         transform.localScale = new Vector3(currentSize, currentSize, currentSize);
+    }
+    private void RestartLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
