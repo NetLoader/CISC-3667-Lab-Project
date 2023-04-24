@@ -14,9 +14,9 @@ public class ScoreKeeper : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    public void IncrementScore()
+    public void AddScore(int points)
     {
-        score++;
+        score += points;
         scoreText.text = "Score: " + score.ToString();
     }
 }

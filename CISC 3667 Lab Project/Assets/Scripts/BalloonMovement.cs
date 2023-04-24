@@ -6,7 +6,7 @@ public class BalloonMovement : MonoBehaviour
 {
     private float speed = 5f;
     private float growthRate = 0.5f;
-    private float maxSize = 13f;
+    private float maxSize = 15f;
     private Rigidbody2D rb;
     private float currentSize;
     void Start()

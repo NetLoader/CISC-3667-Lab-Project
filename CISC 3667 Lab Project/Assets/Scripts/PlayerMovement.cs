@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private float dashingCooldown = 1f;
     public Transform shootingPoint;
     public GameObject bulletPrefab;
+    private float firePinCD = 0.3f;
+    private float nextFireTime = 0f;
 
 
     private void Start()
@@ -53,7 +55,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.LeftAlt) || Input.GetKeyDown(KeyCode.J))
         {
-            FirePin();
+            if (Time.time > nextFireTime)
+            {
+                nextFireTime = Time.time + firePinCD;
+                FirePin();
+            }
         }
         Flip();
         AnimationUpdate();

@@ -32,10 +32,11 @@ public class PinProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Balloon"))
         {
+            float currentSize = collision.transform.localScale.x;
             Debug.Log("Balloon hit!");
             BalloonPopSFX.Play();
+            DynamicScore(currentSize);
             Destroy(collision.gameObject);
-            sk.IncrementScore();
             StartCoroutine(DestroyAfterDelay(1f));
         }
         if (!collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Balloon"))
@@ -48,5 +49,25 @@ public class PinProjectile : MonoBehaviour
         sr.enabled = false;
         yield return new WaitForSeconds(delay);
         Destroy(gameObject);
+    }
+    private void DynamicScore(float cSize)
+    {
+        int score;
+        if (cSize <= 6)
+        {
+            score = 3;
+        }
+        else if (cSize > 6 && cSize <=10)
+        {
+            score = 2;
+        }
+        else{
+            score = 1;
+        }
+        ScoreKeeper scorekeeper = FindObjectOfType<ScoreKeeper>();
+        if (scorekeeper != null)
+        {
+            scorekeeper.AddScore(score);
+        }
     }
 }
