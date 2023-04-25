@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
             jumpSFX.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash || Input.GetKeyDown(KeyCode.K) && canDash)
         {
             dashingSFX.Play();
             StartCoroutine(Dash());

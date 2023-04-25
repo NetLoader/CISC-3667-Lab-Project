@@ -576,6 +576,7 @@ SpriteAtlas:
   - {fileID: 3468235227869191104, guid: 445c6df91e50ef74eb2589883bcc07d1, type: 3}
   - {fileID: -4775826516846400820, guid: 445c6df91e50ef74eb2589883bcc07d1, type: 3}
   - {fileID: -1523491039078323523, guid: 445c6df91e50ef74eb2589883bcc07d1, type: 3}
+  - {fileID: 21300000, guid: ffb0cf1afbd6ee94894b76a13869c29f, type: 3}
   - {fileID: -4422153292065143677, guid: 8123182af98fb8147a7d6e6bf458ba4b, type: 3}
   - {fileID: 670804150163282626, guid: 8123182af98fb8147a7d6e6bf458ba4b, type: 3}
   - {fileID: 5222327376163656147, guid: 8123182af98fb8147a7d6e6bf458ba4b, type: 3}
@@ -1302,6 +1303,7 @@ SpriteAtlas:
   - Part 2 (22x22)_2
   - Part 2 (22x22)_0
   - Part 2 (22x22)_1
+  - Menu BG
   - Top Hit (54x52)_3
   - Top Hit (54x52)_2
   - Top Hit (54x52)_1
