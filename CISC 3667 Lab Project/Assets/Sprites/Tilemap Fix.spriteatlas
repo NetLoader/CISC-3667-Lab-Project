@@ -586,6 +586,7 @@ SpriteAtlas:
   - {fileID: -8052679187600627163, guid: d2223d6a7816d474b83187392732daf6, type: 3}
   - {fileID: 8334726039568525333, guid: d2223d6a7816d474b83187392732daf6, type: 3}
   - {fileID: 21300000, guid: 84b0d89aa2c8bfb4c8c1d378fa972fbd, type: 3}
+  - {fileID: 21300000, guid: 46672a9a9851fac44990ffe7e27faefd, type: 3}
   - {fileID: 5279052050488763491, guid: 7c645aea6faf2564aa5917bd4ca765ea, type: 3}
   - {fileID: 7902450143595181059, guid: 7c645aea6faf2564aa5917bd4ca765ea, type: 3}
   - {fileID: -1791626755524472096, guid: 7c645aea6faf2564aa5917bd4ca765ea, type: 3}
@@ -736,6 +737,7 @@ SpriteAtlas:
   - {fileID: -6190999649076277168, guid: 680c4a3e214ba5b4d984cd56b1d49668, type: 3}
   - {fileID: -4867785508303738327, guid: 680c4a3e214ba5b4d984cd56b1d49668, type: 3}
   - {fileID: 7889182698649827768, guid: 680c4a3e214ba5b4d984cd56b1d49668, type: 3}
+  - {fileID: 21300000, guid: 98d6085ef6eacd04a8d3cb393d6a724a, type: 3}
   - {fileID: 21300000, guid: 3016a57ecc98e9e46b7a110ddd486ee9, type: 3}
   - {fileID: 21300000, guid: 352a718e33872034dbb1f04ddc292b3e, type: 3}
   - {fileID: 21300000, guid: c11a6c9eeb8457144bc2144b42f5b8b2, type: 3}
@@ -1314,6 +1316,7 @@ SpriteAtlas:
   - Bottom Hit (54x52)_3
   - Bottom Hit (54x52)_2
   - Off
+  - Instruction
   - On (24x8)_2
   - On (24x8)_3
   - On (24x8)_0
@@ -1464,6 +1467,7 @@ SpriteAtlas:
   - Left Hit (54x52)_2
   - Left Hit (54x52)_1
   - Left Hit (54x52)_0
+  - Keybind
   - Start (Idle)
   - Balloon
   - Pin

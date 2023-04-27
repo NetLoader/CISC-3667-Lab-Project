@@ -25,4 +25,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    public void Keybind()
+    {
+        SceneManager.LoadScene("Keybind");
+    }
 }
