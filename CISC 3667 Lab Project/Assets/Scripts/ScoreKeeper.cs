@@ -11,13 +11,14 @@ public class ScoreKeeper : MonoBehaviour
 
     private void Start()
     {
-        score = 0;
+        score = PersistentData.Instance.GetScore();
         scoreText.text = "Score: " + score.ToString();
     }
 
     public void AddScore(int points)
     {
         score += points;
+        PersistentData.Instance.SetScore(score);
         totalBalloonPopped++;
         scoreText.text = "Score: " + score.ToString();
     }

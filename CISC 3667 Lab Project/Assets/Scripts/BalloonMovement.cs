@@ -41,6 +41,8 @@ public class BalloonMovement : MonoBehaviour
     }
     private void RestartLevel()
     {
+        int eScore = PersistentData.Instance.GetEnterLevelScore();
+        PersistentData.Instance.SetScore(eScore);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }

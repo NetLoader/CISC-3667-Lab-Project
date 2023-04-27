@@ -18,6 +18,8 @@ public class NextLevel : MonoBehaviour
         score = sk.TotalBalloonPopped();
         if (score >= scoreThreshold )
         {
+            int eScore = PersistentData.Instance.GetScore();
+            PersistentData.Instance.SetEnterLevelScore(eScore);
             int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(nextSceneIndex);
         }

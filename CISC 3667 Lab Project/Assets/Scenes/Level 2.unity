@@ -3061,7 +3061,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1615920171}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: BackToMenu
+        m_MethodName: ToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

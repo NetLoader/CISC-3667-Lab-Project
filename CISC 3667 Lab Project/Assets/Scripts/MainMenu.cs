@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Instruction");
     }
+    public void ToMenu()
+    {
+        PersistentData.Instance.SetScore(0);
+        SceneManager.LoadScene("Menu");
+    }
     public void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
@@ -28,5 +34,9 @@ public class MainMenu : MonoBehaviour
     public void Keybind()
     {
         SceneManager.LoadScene("Keybind");
+    }
+    public void Leaderboard()
+    {
+        SceneManager.LoadScene("Leaderboard");
     }
 }
