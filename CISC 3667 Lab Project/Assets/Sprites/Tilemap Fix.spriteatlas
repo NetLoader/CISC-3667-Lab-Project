@@ -165,6 +165,7 @@ SpriteAtlas:
   - {fileID: 2985246200973115026, guid: 32cc0ed12a4ceea46a9c541b632a008f, type: 3}
   - {fileID: -8102069304995713464, guid: 32cc0ed12a4ceea46a9c541b632a008f, type: 3}
   - {fileID: 2874570451049708880, guid: 32cc0ed12a4ceea46a9c541b632a008f, type: 3}
+  - {fileID: 21300000, guid: 396f3ce17c8e1f14089561eb2cff0768, type: 3}
   - {fileID: -875633866, guid: ffc80c129c9aca14c9fb4dbeba0e10d2, type: 3}
   - {fileID: -1385896497, guid: ffc80c129c9aca14c9fb4dbeba0e10d2, type: 3}
   - {fileID: 1537266610, guid: ffc80c129c9aca14c9fb4dbeba0e10d2, type: 3}
@@ -586,7 +587,6 @@ SpriteAtlas:
   - {fileID: -8052679187600627163, guid: d2223d6a7816d474b83187392732daf6, type: 3}
   - {fileID: 8334726039568525333, guid: d2223d6a7816d474b83187392732daf6, type: 3}
   - {fileID: 21300000, guid: 84b0d89aa2c8bfb4c8c1d378fa972fbd, type: 3}
-  - {fileID: 21300000, guid: 46672a9a9851fac44990ffe7e27faefd, type: 3}
   - {fileID: 5279052050488763491, guid: 7c645aea6faf2564aa5917bd4ca765ea, type: 3}
   - {fileID: 7902450143595181059, guid: 7c645aea6faf2564aa5917bd4ca765ea, type: 3}
   - {fileID: -1791626755524472096, guid: 7c645aea6faf2564aa5917bd4ca765ea, type: 3}
@@ -895,6 +895,7 @@ SpriteAtlas:
   - Break (28x24)_1
   - Break (28x24)_2
   - Break (28x24)_3
+  - Instruction
   - Gray_12
   - Gray_13
   - Gray_10
@@ -1316,7 +1317,6 @@ SpriteAtlas:
   - Bottom Hit (54x52)_3
   - Bottom Hit (54x52)_2
   - Off
-  - Instruction
   - On (24x8)_2
   - On (24x8)_3
   - On (24x8)_0
