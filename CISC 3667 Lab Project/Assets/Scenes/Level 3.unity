@@ -2427,7 +2427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pop All The Balloons!
+  m_text: Pop All The Balloons with timing and precision before it self-destruct!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 895af5aa624e12d4d86bc16bdc8dc9ca, type: 2}
   m_sharedMaterial: {fileID: 8014335581962587177, guid: 895af5aa624e12d4d86bc16bdc8dc9ca, type: 2}
@@ -2522,7 +2522,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 50}
+  m_SizeDelta: {x: 900, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1338684211
 GameObject:
